@@ -17,53 +17,10 @@ for (int i = 1; i <= anyNumber; i++)
 
 Console.WriteLine(" ");
 
-for (int i = 1; i <= anyNumber; i++)
+int even = 0;
 
-// {
-//     if(anyNumber % 2 == 0);  
-//     Even = anyNumber;
-//     Console.Write(Even + ", ");
-// }
-
-
-  
-for (int ev = 2; ev <= anyNumber; ev += 2)
-    Console.Write(ev + ", ");
-
-
-
-
-
-
-    // {
-    //    int num = Convert.ToInt32(Console.ReadLine());
-    //    int res = 1;
-    //    while (res < num)
-    //    {
-    //     Console.WriteLine(res+1);
-    //     res+= 2;
-    //    }
-    // }
-
-
-
-    //     {
-    //     int num = Convert.ToInt32(Console.ReadLine());
-    //     int res = 1;
-       
-    //     if (res == 1)
-
-    //     {
-    //      res += 1;
-    //     }
-
-    //     while (res <= num)
-
-    //     {
-    //         Console.WriteLine(res);
-    //         res += 2;
-    //     }
-
-    // }
+while (even < (anyNumber - 1))
+{
+    even += 2;
+    Console.Write(even + ", ");
 }
-В ПРОЦЕССЕ!!!!

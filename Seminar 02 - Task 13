@@ -23,16 +23,17 @@ Console.Write(AnyNumber);
 
 int Result = 0;
 
-Result = AnyNumber % 10;
-
 for (int i = 1; i <= AnyNumber; i++)
-
 {
     Result = AnyNumber % 10;
-    
-    if (Result > 100 && Result < 1000)
-    {
+
+        while (Result > 100 && Result < 1000)
+    {        
         int ThirdNumber = Result / 10;
+        Console.Write("Третья цифра введённого числа - ");
+        Console.Write(ThirdNumber);
     }
-   
+
 }
+  
+

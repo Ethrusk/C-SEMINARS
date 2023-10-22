@@ -6,13 +6,6 @@
 // 32679 -> 6
 
 
-Console.WriteLine("Введите любое число");
-
-int AnyNumber = Convert.ToInt32(Console.ReadLine());
-Console.Write("Вы ввели число ");
-Console.Write(AnyNumber);
-
-
 // Сперва надо определить число 3х-значное или нет, или больше
 // Если нет, то сразу понятно, что третьего числа нет
 // Если 3 и более знака, то третья цифра - это сотни.
@@ -21,19 +14,21 @@ Console.Write(AnyNumber);
 // Или же делить на 10 без остатка до тех пока результат не окажется в диапазоне от 100 до 999
 // И надо разделить его с остатком на 10, и получим 3ю цифру.
 
-int Result = 0;
+Console.WriteLine("Введите любое число");
 
-for (int i = 1; i <= AnyNumber; i++)
-{
-    Result = AnyNumber % 10;
+int AnyNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Вы ввели число ");
+Console.Write(AnyNumber);
 
+for (int i = 0; i <= AnyNumber; i++)
+    {
+    int Result = AnyNumber % 10;
+    
         while (Result > 100 && Result < 1000)
-    {        
-        int ThirdNumber = Result / 10;
-        Console.Write("Третья цифра введённого числа - ");
-        Console.Write(ThirdNumber);
+        {    int ThirdNumber = Result / 10;
+             Console.Write("Третья цифра введённого числа - ");
+             Console.Write(ThirdNumber);
+        }
+
+
     }
-
-}
-  
-
